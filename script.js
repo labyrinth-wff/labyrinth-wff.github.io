@@ -9,10 +9,15 @@ function CheckDate() {
   );
 }
 
-if (CheckDate() == true)
-{
+function TIU() {
 	var CurrentPath = window.location.pathname;
 	var NewPath = CurrentPath + "/TIU.html";
 	window.location.pathname = NewPath;
-	
 }
+
+if (CheckDate() == true)
+{
+	TIU();
+}
+
+console.log("%cTIU", "color: grey;")
