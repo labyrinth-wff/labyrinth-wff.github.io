@@ -3,9 +3,9 @@ function CheckDate() {
   var TargetDate = new Date(2023, 5, 20); //June is represented by index 5
 
   return (
-    CurrentDate.getDate() === TargetDate.getDate() &&
-    CurrentDate.getMonth() === TargetDate.getMonth() &&
-    CurrentDate.getFullYear() === TargetDate.getFullYear()
+    CurrentDate.getDate() >= TargetDate.getDate() &&
+    CurrentDate.getMonth() >= TargetDate.getMonth() &&
+    CurrentDate.getFullYear() >= TargetDate.getFullYear()
   );
 }
 
